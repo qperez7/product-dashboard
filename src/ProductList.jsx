@@ -1,11 +1,19 @@
-export default function ProductList() {
+import React from 'react';
+import ProductItem from './ProductItem';
+function ProductList() {
     return (
-        <ul>
+        <div>
+            <h2>Product List</h2>
             {products.map(product => (
-                <li key={product.id}>
-                    {product.name} - ${product.price} - {product.discription}
-                </li>
+                <ProductItem
+                    key={product.id}
+                    name={product.name}
+                    price={product.price}
+                    description={product.description}
+                />
             ))}
-        </ul>
+        </div>
     );
 }
+
+export default ProductList;

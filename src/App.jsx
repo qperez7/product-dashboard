@@ -4,7 +4,7 @@ import ProductList from './ProductList';
 //import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+export default function App() {
   const products = [
     {id: 1, name: 'T-Shirt', price: 15, description: 'Company Logo T-Shirt'},
     {id: 1, name: 'Jeans', price: 20, description: 'Standard Company Khakis'},
@@ -23,4 +23,3 @@ function App() {
   )
 }
 
-export default App
