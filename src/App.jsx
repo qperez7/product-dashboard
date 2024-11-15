@@ -6,9 +6,9 @@ import './App.css'
 
 function App() {
   const products = [
-    {id: 1, name: 'T-Shirt', price: 15, Description: 'Company Logo T-Shirt'},
-    {id: 1, name: 'Jeans', price: 20, Description: 'Standard Company Khakis'},
-    {id: 1, name: 'Hat', price: 10, Description: 'Company Logo Hat'},
+    {id: 1, name: 'T-Shirt', price: 15, description: 'Company Logo T-Shirt'},
+    {id: 1, name: 'Jeans', price: 20, description: 'Standard Company Khakis'},
+    {id: 1, name: 'Hat', price: 10, description: 'Company Logo Hat'},
   ]
 
   return (
