@@ -13,6 +13,7 @@ function ProductForm() {
         event.preventDefault();
         alert(`Submitted form: ${productName}`);
     };
+    // Adding new products
     const newProduct = {
         name: productName,
         price: productPrice,

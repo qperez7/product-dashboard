@@ -1,17 +1,18 @@
 import React from 'react';
-import ProductList from './ProductList';
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-import './App.css'
 import ProductItem from './ProductItem';
+import ProductForm from './AddProductForm';
 
+// Product List
 export default function App() {
   const products = [
     {id: 1, name: 'T-Shirt', price: 15, description: 'Company Logo T-Shirt'},
     {id: 2, name: 'Jeans', price: 20, description: 'Standard Company Khakis'},
     {id: 3, name: 'Hat', price: 10, description: 'Company Logo Hat'},
   ]
-
+// Adds New Products depending on Form
+  const [product,setProducts] =useState([]);
+  const addProduct = (newProduct) => {
+  setProducts(prevProducts => ({ ...prevProducts, newProduct}))};
   return (
     <>
       <div>
@@ -23,7 +24,11 @@ export default function App() {
                     price={product.price}
                     description={product.description}
                 />
+    
       ))}
+      </div>
+      <div>
+      <ProductForm addProduct = {addProduct} />
       </div>
       
      
