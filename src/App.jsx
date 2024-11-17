@@ -17,8 +17,8 @@ export default function App() {
     { id: 3, name: "Hat", price: 10, description: "Company Logo Hat" }
   );
   Aproduct;
-  const addProduct = (newProduct) => {
-    setProducts((prevProducts) => ({ ...prevProducts, newProduct }));
+  const addProduct = () => {
+    setProducts((newProduct) => ({ ...newProduct, id: newProduct.id + 1 }));
   };
   return (
     // Displays the following on the page:
@@ -37,7 +37,7 @@ export default function App() {
             ))}
           </div>
           <div>
-            <ProductForm addProduct={addProduct} />
+            <ProductForm newProduct={addProduct} />
           </div>
         </div>
       </div>
