@@ -5,7 +5,7 @@ function ProductItem({ name, price, description }) {
     <div className="product-item">
       <h3>{name}</h3>
       <p>Price: ${price}</p>
-      <h4>Description:{description} </h4>
+      <p>Description: {description} </p>
     </div>
   );
 }
